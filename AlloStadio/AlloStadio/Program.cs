@@ -119,14 +119,14 @@ namespace Game
 
                 if (rInt < 10)
                 {
-                    Console.WriteLine("GOAL!");
+                    Console.WriteLine("GOAL! Ha segnato" + Squadre[0]);
                     homescore = homescore + 1;
                 }
 
                 else if (rInt > 90)
 
                 {
-                    Console.WriteLine("GOAL!");
+                    Console.WriteLine("GOAL! Ha segnato" + Squadre[1]);
                     awayscore = awayscore + 1;
                 }
 
@@ -141,7 +141,7 @@ namespace Game
 
             
 
-            Console.WriteLine("Triplice fischio. Finisce 0 a 0, una partita povera di emozioni");
+            Console.WriteLine("Triplice fischio. Finisce" + homescore + "a " + awayscore + ", una partita ricca di emozioni");
 
         }
 
