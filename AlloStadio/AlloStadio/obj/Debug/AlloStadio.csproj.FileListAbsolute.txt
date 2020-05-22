@@ -1,0 +1,7 @@
+C:\Users\punki\source\repos\AlloStadio\AlloStadio\bin\Debug\AlloStadio.exe.config
+C:\Users\punki\source\repos\AlloStadio\AlloStadio\bin\Debug\AlloStadio.exe
+C:\Users\punki\source\repos\AlloStadio\AlloStadio\bin\Debug\AlloStadio.pdb
+C:\Users\punki\source\repos\AlloStadio\AlloStadio\obj\Debug\AlloStadio.csprojAssemblyReference.cache
+C:\Users\punki\source\repos\AlloStadio\AlloStadio\obj\Debug\AlloStadio.csproj.CoreCompileInputs.cache
+C:\Users\punki\source\repos\AlloStadio\AlloStadio\obj\Debug\AlloStadio.exe
+C:\Users\punki\source\repos\AlloStadio\AlloStadio\obj\Debug\AlloStadio.pdb
