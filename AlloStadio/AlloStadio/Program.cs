@@ -3,7 +3,7 @@ using System.Globalization;
 
 namespace Game
 {
-    static class Madlib
+    static class AlloStadio
     {
         //declare variables
         static string[] Squadre = new string[] { "creature", "luminous" };
@@ -107,7 +107,7 @@ namespace Game
             int homescore = 0;
             int awayscore = 0;
             
-            for (int clock = 1; clock < 91; clock++)
+            for (int clock = 1; clock < 46; clock++)
 
             {
 
@@ -117,16 +117,16 @@ namespace Game
                 Random r = new Random();
                 int rInt = r.Next(0, 100); //for ints
 
-                if (rInt < 10)
+                if (rInt < 5)
                 {
-                    Console.WriteLine("GOAL!");
+                    Console.WriteLine("GOAL! Ha segnato " + Squadre[0] + " al minuto " + clock );
                     homescore = homescore + 1;
                 }
 
-                else if (rInt > 90)
+                else if (rInt > 95)
 
                 {
-                    Console.WriteLine("GOAL!");
+                    Console.WriteLine("GOAL! Ha segnato " + Squadre[1] + " al minuto " + clock);
                     awayscore = awayscore + 1;
                 }
 
@@ -137,11 +137,47 @@ namespace Game
                 }
             }
 
-                
 
-            
+            Console.WriteLine("Termina qui il primo tempo. L'arbitro manda tutti a prendere un té caldo.");
 
-            Console.WriteLine("Triplice fischio. Finisce 0 a 0, una partita povera di emozioni");
+            System.Threading.Thread.Sleep(1000);
+
+            Console.WriteLine("Tutto é pronto per il secondo tempo. " + Squadre[1] + " sul pallone pronto a battere. Partiti!");
+
+
+            for (int clock = 46; clock < 91; clock++)
+
+            {
+
+
+                System.Threading.Thread.Sleep(1000);
+
+                Random r = new Random();
+                int rInt = r.Next(0, 100); //for ints
+
+                if (rInt < 5)
+                {
+                    Console.WriteLine("GOAL! Ha segnato " + Squadre[0] + " al minuto " + clock);
+                    homescore = homescore + 1;
+                }
+
+                else if (rInt > 95)
+
+                {
+                    Console.WriteLine("GOAL! Ha segnato " + Squadre[1] + " al minuto " + clock);
+                    awayscore = awayscore + 1;
+                }
+
+                else
+
+                {
+                    Console.WriteLine("Non succede un cazzo al minuto " + clock);
+                }
+            }
+
+
+
+            Console.WriteLine("Triplice fischio. Finisce " + homescore + " a " + awayscore + ", una partita ricca di emozioni");
 
         }
 
@@ -158,7 +194,7 @@ namespace Game
     {
         static void Main()
         {
-            Madlib.Run();
+            AlloStadio.Run();
 
         }
     }
