@@ -23,19 +23,27 @@ namespace Game
        }
 
         /*
-        A secondda della posizione del campo in gioco ci sono diversi eventi.
-        A seconda delle tattiche decisi, le propabibilita' aumentano
+          A secondda della posizione del campo in gioco ci sono diversi eventi.
+          A seconda delle tattiche decisi, le propabibilita' aumentano
         */
 
         public void attack(Team f, Pitch p)
         {
-            
+          p.   
         }
 
        public void shortPlay(Team t, Tactics ta){
            if(t.midfield > 75 && ta._possession > 75){
                
            }
+       }
+
+       public static void main(){
+        Team t = new Team();
+        Tactics e = new Tactics();
+        e._center_attack = 30;
+        t.usesTactics(e);
+        e._
        }
     }
 }

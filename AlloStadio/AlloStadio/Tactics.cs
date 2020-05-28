@@ -17,7 +17,14 @@ public class Tactics : Team
     public int _center_attack { get; set; }
     public int _wide_attack { get; set;}
     public int _possession { get; set;}
-
     public int _counter_attack { get; set; }
+    public int _high_defense { get; set; }
+    public int _low_defense { get; set; }
+    public int _long_ball { get; set; }
+    public int _short_ball { get; set; }
+    public int _center_defense { get; set; }
+    public int _wide_defense { get; set; }
+
+
     
 }
