@@ -23,9 +23,8 @@ namespace Game
 
 
             Header();
-            AskQuestions();
-            ReadStory();
-            End();
+            MainMenu();
+            
         }
 
         static void Header()
@@ -51,18 +50,69 @@ namespace Game
 
             Console.WriteLine(title);
 
-            Console.WriteLine("-------");
-            Console.WriteLine("Un programma di Roy & Spuk!");
-            Console.WriteLine("Presented by IFCATS");
-            Console.WriteLine("-------");
+            
 
 
 
         }
 
-        static void AskQuestions()
+        static void MainMenu()
 
         {
+
+            
+
+            Console.WriteLine("1 - Amichevole");
+            Console.WriteLine("2 - Coppa");
+            Console.WriteLine("3 - Options");
+            Console.WriteLine("4 - Exit");
+
+
+            Console.WriteLine("");
+
+
+            Console.WriteLine("Please type an option and press Enter");
+            Console.ReadLine();
+
+            string choice = Console.ReadLine();
+
+
+
+
+            switch (Console.ReadLine())
+            {
+                case "1":
+                    Amichevole();
+                    return;
+                case "2":
+                    Coppa();
+                    return;
+                case "3":
+                    TheOptions();
+                    return;
+                case "4":
+                    End();
+                    return;
+                default:
+                    return;
+            }
+
+
+
+
+
+
+
+
+        }
+
+        static void Amichevole()
+
+        {
+
+            Console.WriteLine("Amichevole");
+            Console.WriteLine("");
+
 
             //ask player to enter words
 
@@ -185,6 +235,22 @@ namespace Game
         {
             //keep window open and prompt for exit
             Console.WriteLine("Press enter to exit");
+            Console.ReadKey();
+        }
+
+
+        static void Coppa()
+        {
+            //keep window open and prompt for exit
+            Console.WriteLine("Coppa");
+            Console.ReadKey();
+        }
+
+
+        static void TheOptions()
+        {
+            //keep window open and prompt for exit
+            Console.WriteLine("Opzioni");
             Console.ReadKey();
         }
 
