@@ -144,6 +144,7 @@ namespace Game
 
             Console.WriteLine("Tutto é pronto per il secondo tempo. " + Squadre[1] + " sul pallone pronto a battere. Partiti!");
 
+            
 
             for (int clock = 46; clock < 91; clock++)
 
